@@ -1,12 +1,12 @@
-APR MDC Code is less specific than CCS diagnosis code - maybe filter on APR MDC Code first to get the most frequent diseases.
+# APR MDC Code is less specific than CCS diagnosis code - maybe filter on APR MDC Code first to get the most frequent diseases.
 
-Age group from range to ordinal number.
+# Age group from range to ordinal number.
 
-Type of adimission to ordinal number
+# Type of adimission to ordinal number
 
-Patienet disposition (condition of patient at discharge) to ordinal number.
+## Patienet disposition (condition of patient at discharge) to ordinal number.
 
-Add a column named 'Patient Disposition Indicator' with values: 
+# Add a column named 'Patient Disposition Indicator' with values: 
   Home or Self Care                             18;
   
   Home w/ Home Health Services                  17;
@@ -46,8 +46,8 @@ Add a column named 'Patient Disposition Indicator' with values:
   Critical Access Hospital                       0
  
 
-#check wheter APR risk of mortality == APR severity of illness ? use APR severity of illness code for both columns
+# Check wheter APR risk of mortality == APR severity of illness ? use APR severity of illness code for both columns
 
-APR medical surgical description - maybe convert to boolean (0 for medical, 1 for surgical)
+# APR medical surgical description - maybe convert to boolean (0 for medical, 1 for surgical)
 
-CCS procedure code indicates treatments.
+# CCS procedure code indicates treatments.
