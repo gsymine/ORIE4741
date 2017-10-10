@@ -4,9 +4,9 @@
 
 # Type of adimission to ordinal number
 
-## Patienet disposition (condition of patient at discharge) to ordinal number.
+# Patienet disposition (condition of patient at discharge) to ordinal number.
 
-# Add a column named 'Patient Disposition Indicator' with values: 
+   ## Add a column named 'Patient Disposition Indicator' with values: 
   Home or Self Care                             18;
   
   Home w/ Home Health Services                  17;
