@@ -1,0 +1,52 @@
+10/10/17
+
+First Cleaning:
+We picked the rows with 10 most frequent occuring APR MDC diseases. 
+Among these 10 diseases, the top occuring disease is 
+Diseases and Disorders of the Circulatory System with an acccount of 351437.
+
+Second Cleaning:
+The rows are sorted into 5 different age groups.
+Age Group
+0 to 17        340354
+18 to 29       218638
+30 to 49       366321
+50 to 69       495687
+70 or Older    570350.
+We added a column called "insert column" and renamed these five groups to 0, 1, 2, 3, 4
+0 (for 0 to 17), 1 (for 18 to 29), 2 (for 30 to 49 ), 3 (for 50 to 69), 4 (for 70 or Older)
+
+Third Cleaning:
+The rows have 6 different Type of Admissions:
+Type of Admission
+Elective          348464
+Emergency        1228614
+Newborn           237539
+Not Available       1483
+Trauma              2354
+Urgent            172896
+
+We added a column called "Admission Type Indicator" and renamed these six groups to 0, 1, 2, 3, 4, 5 according to:
+0 - Not Available
+1 - Emergency
+2 - Urgent
+3 - Elective
+4 - Newborn
+5 - Trauma 
+
+Fourth Cleaning: ~ Ivy Type of Disposition
+
+Fifth Cleaning:
+Initially we were unsure whether APR Risk of Mortality is the same as APR Severity of Illness Code, but after checking the data,
+we found these are are different. Although they have some differences, the two are highly correlated so we decided to 
+use APR Severity of Illness Code as our feature instead of APR Risk of Mortality.
+
+We checked columns of APR Severity of Illness Code and found we have 45 NAs so we thought about deleting these rows. However,
+we wanted to check if these rows contained other important information in other columns --- APR risk of mortality and 
+APR medical surgical description. We found the two columns also have 45 NAs and they are the same 45 NAs corresponding
+to APR Severity of Illness Code. Therefore, it is safe to delete these 45 rows.
+
+Sixth Cleaning:
+CCS procedure code - 331 categories
+APR DRG Code - 206 categories
+
