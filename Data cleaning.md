@@ -46,7 +46,7 @@ Add a column named 'Patient Disposition Indicator' with values:
   Critical Access Hospital                       0
  
 
-check wheter APR risk of mortality == APR severity of illness ? use APR severity of illness code for both columns
+#check wheter APR risk of mortality == APR severity of illness ? use APR severity of illness code for both columns
 
 APR medical surgical description - maybe convert to boolean (0 for medical, 1 for surgical)
 
