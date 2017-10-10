@@ -6,7 +6,7 @@ Type of adimission to ordinal number
 
 Patienet disposition (condition of patient at discharge) to ordinal number.
 
-Add a column named 'Patient Disposition Indicator' with values: {
+Add a column named 'Patient Disposition Indicator' with values: 
   Home or Self Care                             18
   Home w/ Home Health Services                  17
   Skilled Nursing Home                          16
@@ -26,7 +26,7 @@ Add a column named 'Patient Disposition Indicator' with values: {
   Federal Health Care Facility                   2
   Medicaid Cert Nursing Facility                 1
   Critical Access Hospital                       0
- }
+ 
 
 check wheter APR risk of mortality == APR severity of illness ? use APR severity of illness code for both columns
 
