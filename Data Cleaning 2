@@ -1,0 +1,24 @@
+Seventh Cleaning:
+We have APR DRG Code - 206 categories. It is generallly impossible for us to predict all 206 different types of illnesses. 
+Even if we manage to predict 206 illnesses, it will probably overfit our model if we were to use it on our test data. 
+Therefore, we want to divide our data into 8 different groups: 
+Group 1 to Group 7 are specific diseases and Group 8 is all the remaining diseases. 
+The idea of Group 8 is when we predict an illness which is not one of the 7 types we pick, we can use regard it as Group 8. 
+The following steps describe how we pick the 8 groups using Within Group Variation.
+
+First, we calculate the standard deviation of entire the data set. SD_entire
+We decide to pick rows with APR DRG Code between 3 and 20 (18 groups) to calculate remaining groups' standard 
+deviations. 
+For example, if we are in our 1st loop which picks APR DRG Code (3), we then calculate the standard deviation of our data
+set by removing rows whose APR DRG Code is 3. Let's call it SD1.
+If we are in our 2nd loop which picks APR DRG Codes (3 and 4), we then calculate the standard deviation of our data
+set by removing rows whose APR DRG Codes are 3 and 4. Let's call it SD2.
+We do these steps for 18 loops, which will give us 18 SDs. We compare these 18 SDs with SD_entire. We pick the 7 SDs which are
+most close to SD_entire. The corresponding illnesses of the 7 SDs are the 7 Groups.
+
+Data Insepctions
+~ Outliers
+We have some rows with charges being very small, somewhere between $1 and $100. We think these data are either due to typo
+or due to some special situations (for example, change of hospital) which we are not interested in. Therefore, we decide
+to remove those rows whose charge is fewer than $500.
+
