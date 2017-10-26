@@ -1,0 +1,12 @@
+Oct 25
+
+Cleaning:
+
+Remove all rows associated with Abortions because the data is incomplete due to confidentiality
+
+remove all rows with Geneder - U (56)
+
+remove all rows with Race - Unknown (7000+)
+
+select Manhattan, Kings, Queens, Nassau, Bronx, Suffolk, Erie, Westchester, Monroe, Onondaga, Albany, Richmond
+(1,532,591/2,540,000 = 60.34%)
