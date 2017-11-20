@@ -1,0 +1,7 @@
+Take logs of Total Charges
+Pick loss functions betweeen l1 and l2
+  Run l2 and l1, we find that the result of l2 is better than l1. After taking logs of Total Charges, l1 cannot capture
+  the big values.
+  
+Ivy's feature engineering idea:
+  Use Average Income Level of Counties to represent Income Levels
