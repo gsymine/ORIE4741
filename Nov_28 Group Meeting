@@ -1,0 +1,8 @@
+So far, Ivy ---- Quantile
+        Siyao --- Logistic
+
+Siyao ----- huber/lasso ~~~ not good
+            ridge ~~~ not bad
+            random forest ~~~ really bad
+            
+Ivy ----- county level ----> income per capita (feature engineering)
