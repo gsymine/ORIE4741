@@ -1,0 +1,24 @@
+Roadmap
+
+Feature Engineering
+  log($$$) ---> histogram
+  
+
+Linear 
+  l2 loss (better than huber and l1 loss)
+  huber 
+  l1 loss
+  quantile (best) ---> cross validate to pick the best quantile
+                  ---> add a feature: income levels
+  
+Tree
+  converge <---> depth
+  
+  
+---> note: MSE is not good for comparisons any more
+
+
+---> compare Quantile and Tree
+
+
+---> Test MSE
